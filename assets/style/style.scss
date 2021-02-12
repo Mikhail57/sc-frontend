@@ -79,6 +79,21 @@ body {
     padding: 24px 28px;
   }
 }
+.hero {
+  &.is-black {
+    background: black;
+  }
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-64 {
+  margin-top: 64px;
+}
 
 // Import Bulma and Buefy styles
 @import "~bulma";

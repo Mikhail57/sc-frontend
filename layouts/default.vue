@@ -14,7 +14,7 @@
 
       <template #end>
         <b-navbar-item tag="div">
-          <v-template v-if="!loggedIn">
+          <template v-if="!loggedIn">
             <div class="buttons">
               <router-link class="button is-primary" to="/login">
                 Вход
@@ -23,7 +23,7 @@
                 Регистрация
               </router-link>
             </div>
-          </v-template>
+          </template>
         </b-navbar-item>
       </template>
     </b-navbar>
