@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Font
+$family-sans-serif: 'Roboto', sans-serif !global;
+$family-primary: $family-sans-serif;
+
+// Display options
+$widescreen-enabled: false;
+
+// Set your colors
+@import "colors";
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert),
+  "twitter": ($twitter, $twitter-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Inputs
+$input-border-color: #EBEBEB;
+$input-background-color: #EBEBEB;
+$input-radius: 20px;
+$input-height: 80px;
+
+$body-font-size: 24px;
+
+// NavBar
+$navbar-height: 100px;
+$navbar-padding-vertical: 25px;
+
+html {
+  background: #E5E5E5;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  &.is-transparent {
+    background: transparent;
+  }
+}
+.button{
+  &.is-big {
+    border-radius: 20px !important;
+    padding: 24px 64px !important;
+    font-size: 30px !important;
+  }
+
+  &.is-transparent {
+    background: transparent;
+  }
+}
+.input {
+  &.is-design {
+    font-size: 25px;
+    padding: 24px 28px;
+  }
+}
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
